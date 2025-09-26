@@ -1,0 +1,4 @@
+// filepath: C:\Users\Shash\OneDrive\Desktop\SIH\EMR\.gitignore
+node_modules/
+```
+This tells Git to ignore the `node_modules` folder.
