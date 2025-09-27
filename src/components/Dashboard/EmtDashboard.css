@@ -1,0 +1,83 @@
+.dashboard {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+  
+  .dashboard-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+  }
+  
+  .btn-group .btn {
+    border-radius: 8px;
+    margin: 0 2px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .badge {
+    font-size: 0.75em;
+    padding: 0.5em 0.75em;
+  }
+  
+  .table-dark {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%) !important;
+  }
+  
+  .btn-success {
+    background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background: linear-gradient(135deg, #00a08b 0%, #85b835 100%);
+    transform: translateY(-2px);
+  }
+  
+  .btn-outline-danger:hover {
+    transform: scale(1.1);
+  }
+  
+  .fas {
+    margin-right: 0.2em;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-header .d-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .dashboard-header .me-3 {
+      margin-right: 0 !important;
+      margin-bottom: 1rem;
+    }
+    
+    .btn-group {
+      width: 100%;
+    }
+    
+    .btn-group .btn {
+      flex: 1;
+    }
+  }

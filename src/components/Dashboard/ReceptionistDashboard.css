@@ -1,0 +1,125 @@
+.dashboard {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  
+  .dashboard-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Proper alignment for header elements */
+  .dashboard-header .container-fluid {
+    padding: 0 1rem;
+  }
+  
+  .dashboard-header .d-flex {
+    min-height: 60px;
+  }
+  
+  /* Notification bell proper positioning */
+  .position-relative .btn {
+    padding: 0.375rem 0.75rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Badge positioning fix */
+  .position-relative .badge {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.4rem;
+    min-width: 18px;
+  }
+  
+  /* Notification dropdown proper positioning */
+  .position-absolute.end-0 {
+    right: 0 !important;
+  }
+  
+  /* Card styling for notifications */
+  .card {
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .card-header {
+    border-radius: 10px 10px 0 0 !important;
+  }
+  
+  /* Proper gap between header elements */
+  .gap-3 {
+    gap: 1rem !important;
+  }
+  
+  /* Button group proper spacing */
+  .btn-group {
+    gap: 0.5rem;
+  }
+  
+  .btn-group .btn {
+    border-radius: 8px;
+  }
+  
+  /* Table responsive fixes */
+  .table-responsive {
+    border-radius: 10px;
+  }
+  
+  /* Ensure proper vertical alignment */
+  .d-flex.align-items-center {
+    height: 100%;
+  }
+  
+  /* Logout button proper sizing */
+  .btn-danger.btn-sm {
+    padding: 0.375rem 0.75rem;
+    white-space: nowrap;
+  }
+  
+  /* Welcome message alignment */
+  .welcome-message {
+    opacity: 0.9;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive fixes */
+  @media (max-width: 768px) {
+    .dashboard-header .d-flex {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .dashboard-header .d-flex.align-items-center {
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .gap-3 {
+      gap: 0.5rem !important;
+    }
+    
+    .position-absolute.end-0 {
+      position: fixed !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      right: auto !important;
+      width: 90% !important;
+    }
+  }
+  
+  /* Hover effects */
+  .btn:hover {
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+    transition: all 0.2s ease;
+  }
